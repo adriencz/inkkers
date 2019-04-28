@@ -1,19 +1,19 @@
 <template lang="html">
   <div class="ui top fixed menu app-header">
     <div class="ui container">
-      <p class="item item-logo">!nkkers</p>
+      <router-link :to="{ name: 'home', params: {} }"><p class="item item-logo">!nkkers</p></router-link>
       <div class="right menu">
         <div class="item">
-          <img src="/img/app/calendar.png" alt="">
+          <router-link :to="{ name: '', params: {} }"><img src="/img/app/calendar.png" alt=""></router-link>
         </div>
         <div class="item">
-          <img src="/img/app/like.png" alt="">
+          <router-link :to="{ name: '', params: {} }"><img src="/img/app/like.png" alt=""></router-link>
         </div>
         <div class="item">
-          <img src="/img/app/message.png" alt="">
+          <router-link :to="{ name: 'about', params: {} }"><img src="/img/app/message.png" alt=""></router-link>
         </div>
         <div class="item">
-          <img src="/img/app/user.png" alt="">
+          <router-link :to="{ name: '', params: {} }"><img src="/img/app/user.png" alt=""></router-link>
         </div>
       </div>
     </div>
