@@ -1,20 +1,36 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="ui container grid">
+    <Header></Header>
+    <div class="ui four wide column">
+      <Menu></Menu>
     </div>
-    <router-view/>
+    <div class="ui twelve wide column view-container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
+<script>
+import Header from './components/Header'
+import Menu from './components/Menu'
+
+export default {
+  components: { Header, Menu, },
+}
+</script>
+
 <style>
+@font-face {
+  font-family: 'cool';
+  src: url('/fonts/coolvetica_rg.ttf');
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'cool', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  padding-top: 130px;
 }
 #nav {
   padding: 30px;
@@ -28,4 +44,8 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+
+
 </style>
