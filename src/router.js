@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './components/Home.vue'
-
+import Home from './components/Home'
+import Messages from './components/Messages'
+import Message from './components/Message'
 
 
 import NProgress from 'nprogress'
@@ -19,9 +20,14 @@ Vue.use(Router)
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/messages',
+      name: 'messages',
+      component: Messages
+    },
+    {
+      path: '/message',
+      name: 'message',
+      component: Message
     }
   ]
 })

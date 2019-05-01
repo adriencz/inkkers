@@ -10,7 +10,7 @@
           <router-link :to="{ name: '', params: {} }"><img src="/img/app/like.png" alt=""></router-link>
         </div>
         <div class="item">
-          <router-link :to="{ name: 'about', params: {} }"><img src="/img/app/message.png" alt=""></router-link>
+          <router-link :to="{ name: 'messages', params: {} }"><img src="/img/app/message.png" alt=""></router-link>
         </div>
         <div class="item">
           <router-link :to="{ name: '', params: {} }"><img src="/img/app/user.png" alt=""></router-link>

@@ -45,7 +45,9 @@ export default {
   color: #42b983;
 }
 
-
+html * {
+  outline: none !important;
+}
 
 
 </style>

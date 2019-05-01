@@ -16,28 +16,28 @@
           <img src="/img/stories/face1.jpeg" alt="">
           <div class="author-container">
             <p class="author">claudiakreszka</p>
-            <p class="time">13:42</p>
+            <p class="time">Il y a 1 heure</p>
           </div>
         </div>
         <div class="story">
           <img src="/img/stories/face2.jpeg" alt="">
           <div class="author-container">
             <p class="author">claudiakreszka</p>
-            <p class="time">13:42</p>
+            <p class="time">Il y a 23 min</p>
           </div>
         </div>
         <div class="story">
           <img src="/img/stories/face4.jpeg" alt="">
           <div class="author-container">
             <p class="author">claudiakreszka</p>
-            <p class="time">13:42</p>
+            <p class="time">Il y a 21 heures</p>
           </div>
         </div>
         <div class="story">
           <img src="/img/stories/face4.jpeg" alt="">
           <div class="author-container">
             <p class="author">claudiakreszka</p>
-            <p class="time">13:42</p>
+            <p class="time">Il y a 3 heures</p>
           </div>
         </div>
       </div>
@@ -62,11 +62,12 @@ export default {
 
 .left-app-menu .ui.input input {
   border-radius: 4px;
+  font-family: Roboto, sans-serif;
 }
 
 .left-app-menu .item {
   text-align: left;
-  font-family: Lora, sans-serif;
+  font-family: Roboto, sans-serif;
   height: 43px;
   display: flex !important;
   align-items: center !important;
@@ -118,8 +119,13 @@ export default {
   font-weight: 400;
 }
 .left-app-menu .story .author-container .author {
-  font-weight: bold;
+  font-weight: 500;
   margin: 0;
   width: 100%;
+}
+
+.left-app-menu .story .author-container p.time {
+  font-family: Roboto, sans-serif !important;
+  /* font-size: 18px; */
 }
 </style>
